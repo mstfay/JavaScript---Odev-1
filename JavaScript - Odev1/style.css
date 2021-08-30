@@ -1,0 +1,56 @@
+body {
+    background: rgb(47, 194, 11);
+  }
+  
+  .clock {
+    position: relative;
+    text-align: center;
+    color: #d41616;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 7px;
+  }
+  
+  .text1 {
+    position: relative;
+    text-align: center;
+    color: #cac2b9;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 7px;
+  }
+  
+  .text2 {
+    position: relative;
+    text-align: center;
+    color: #cac2b9;
+    font-size: 40px;
+    font-family:'Playfair Display', serif;
+    letter-spacing: 7px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  .text3 {
+    position: relative;
+    text-align: center;
+    color: #14db3fe5;
+    font-size: 40px;
+    font-family:'Playfair Display', serif;
+    letter-spacing: 7px;
+    margin-right: 100px;
+    margin-left: 100px;    
+  }
+
+  .text4 {
+    position: relative;
+    text-align: center;
+    color: #e71515e5;
+    font-size: 60px;
+    font-family:'Playfair Display', serif;
+    letter-spacing: 7px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }

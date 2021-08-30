@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Kodluyoruz Javascript Odev - 1</title>
+  </head>
+  <body style="background-color: rgb(2, 5, 5);">
+    <iframe style="margin-left: 550px;" width="504" height="284" src="https://www.youtube.com/embed/Wk9uKgVtla0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="text-center">
+      <img src="" alt="">
+      <div class="text1 text-center">
+        Merhaba, <strong><span id="userName"></span></strong>! Gemworks' e Gösterdiğin ilgi için teşekkür ederiz!
+      </div>
+      <div class="text3 text-center" style="text-decoration:underline; padding: 25px">Güncel Saat</div>
+      <div id="myClock" class="clock text3" onload="showTime()"></div>
+      
+      <div class="text2 text-center" style="padding: 25px; font-size: 60px; text-decoration: underline"><strong>Oyun Çıkış Tarihine Kalan Süre:</strong></div>
+      
+      <div class="text4 text-center">
+        <p id="timer">
+            <span id="timer-gunler"></span>
+            <span id="timer-saatler"></span>
+            <span id="timer-dakikalar"></span>
+            <span id="timer-saniyeler"></span>
+        </p>
+    </div>
+    </div>
+    <script src="gemworks.js"></script>
+  </body>
+</html>
