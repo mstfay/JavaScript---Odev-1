@@ -2,14 +2,15 @@ function askName() {
     let userName = prompt("Please Enter Your User Name");
     document.getElementById("userName").innerHTML = userName[0].toUpperCase() + userName.slice(1).toLowerCase();
  }
- 
+ /*    ******************** TARİH BİLGİLERİNİ ÇEKTİĞİMİZ KISIM ******************** */
  function showTime() {
    let date = new Date();
    let today = date.getDay();
    let tHours = date.getHours();
    let tMinutes = date.getMinutes();
    let tSeconds = date.getSeconds();
-   
+
+ /*    ******************** HAFTANIN X. GÜNÜ ŞUNA EŞİTTİR ******************** */
 
    switch(true){
        case today == 1:
@@ -35,6 +36,8 @@ function askName() {
        break;
    }
 
+/*    ***************** TARİH BİLGİLERİ ÇİFT HANEYE ULAŞTIRSA DÜZGÜN YAZDIRMAK İÇİN ***************** */
+
    if(tHours <= 9){
        tHours = "0" + tHours
    }
@@ -55,25 +58,30 @@ function askName() {
     else{
     tSeconds = tSeconds
     }
- 
+ /*    ******************** TARİHİ HTML' E AKTARIP YAZDIRMAK İÇİN ******************** */
    let time = tHours + ":" + tMinutes + ":" + tSeconds + " " + today;
    document.getElementById("myClock").innerHTML = time;
    document.getElementById("myClock").textContent = time;
  
+/*    ******************** REFRESH YAPMASI İÇİN GİRİLEN KOD ******************** */
    setTimeout(showTime, 1000);
  }
- 
+
+ /*    ******************** FONKSİYONLARI ÇAĞIRDIĞIMIZ KISIM ******************** */
  askName();
  showTime();
 
+ /*    ******************** ŞU TARİHTEN GERİ SAYIM YAP ******************** */
  let endDate = new Date("Jan 01, 2022 00:00:00").getTime();
     let timer = setInterval(function() {
  
         let now = new Date().getTime(); 
         let t = endDate - now;
         
+/*    ******************** GEÇMİŞ TARİHLİ BİR KONTROL YAPMAMAK İÇİN ******************** */
         if (t >= 0) {
- 
+
+/*    ******************** YAZDIRMAK İÇİN YUVARLAMA YAPIYORUZ ******************** */
             let gunler = Math.floor(t / (1000 * 60 * 60 * 24));
             let saatler = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let dakikalar = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
@@ -96,4 +104,5 @@ function askName() {
         }
         
         
+/*    ******************** REFRESH OLMASI İÇİN ÖNEMLİ ******************** */
     }, 1000);
